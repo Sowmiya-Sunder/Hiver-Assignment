@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiver Knowledge Assistant</title>
+
+    <!-- Link external CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+<div class="container">
+
+    <h1>Hiver Knowledge Assistant</h1>
+
+    <form method="post">
+        <input type="text" name="query" placeholder="Ask a question (e.g., Why is CSAT not appearing?)" required>
+        <button type="submit">Search</button>
+    </form>
+
+    {% if retrieved_docs %}
+        <div class="section-title">📄 Retrieved Articles:</div>
+
+        {% for doc in retrieved_docs %}
+        <div class="doc-card {% if loop.index0 == 0 %}top{% endif %}">
+            <div class="doc-title">
+                {% if loop.index0 == 0 %}⭐ Top Match: {% endif %}
+                {{ doc[0] }}
+            </div>
+            <div class="confidence">Confidence: {{ doc[2] }}</div>
+            <div>{{ doc[1] }}</div>
+        </div>
+        {% endfor %}
+    {% endif %}
+
+    {% if answer %}
+        <div class="section-title">💡 Generated Answer</div>
+        <div class="answer-box">
+            {{ answer }}
+        </div>
+    {% endif %}
+
+</div>
+</body>
+</html>
+
+

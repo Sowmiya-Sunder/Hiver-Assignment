@@ -1,0 +1,93 @@
+body {
+    font-family: Inter, sans-serif;
+    background: #f2f5f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e0;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 20px;
+    background: #2b6cb0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #265a8b;
+}
+
+.section-title {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.doc-card {
+    background: #f8fafc;
+    border-left: 4px solid #4299e1;
+    padding: 15px 18px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.doc-card.top {
+    border-left-color: #48bb78; /* green */
+    background: #f0fff4;
+}
+
+.doc-title {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.confidence {
+    font-size: 14px;
+    color: #4a5568;
+    margin-bottom: 8px;
+}
+
+.answer-box {
+    background: #edf2f7;
+    padding: 18px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border-left: 4px solid #2b6cb0;
+    white-space: pre-wrap;
+}
+

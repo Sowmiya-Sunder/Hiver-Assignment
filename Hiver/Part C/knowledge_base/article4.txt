@@ -1,0 +1,1 @@
+Email delays or missing features like CSAT visibility may occur when system permissions change or API tokens expire. Please re-authenticate integrations when needed.

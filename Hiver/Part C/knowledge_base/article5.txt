@@ -1,0 +1,1 @@
+To enable CSAT, go to Settings → Surveys → Enable CSAT for relevant mailboxes. If the analytics dashboard does not update, wait for data refresh or check applied filters.

@@ -1,0 +1,1 @@
+CSAT may not appear due to disabled surveys, dashboard refresh delays, or API syncing issues. Ensure CSAT surveys are enabled in Settings.

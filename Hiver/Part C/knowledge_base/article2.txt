@@ -1,0 +1,1 @@
+Automation may fail if workflow conditions overlap or if a rule was recently edited incorrectly. Always check trigger conditions and ensure no conflicting workflows are active.

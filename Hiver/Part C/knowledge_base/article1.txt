@@ -1,0 +1,1 @@
+Automations in Hiver can be configured using workflow rules. Users can create triggers based on conditions such as subject, sender, and email status. Automations help streamline recurring tasks.
